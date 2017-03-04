@@ -1,0 +1,24 @@
+group 'DataMiningProject1Apriori'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+compileJava {
+    options.fork = true
+    options.forkOptions.setMemoryMaximumSize("4g")
+}
+
+task(run, dependsOn: 'classes', type: JavaExec) {
+    if (project.hasProperty("appArgs")) {
+        args Eval.me(appArgs)
+    }
+    main = 'datamining.AprioriDriver'
+    classpath = sourceSets.main.runtimeClasspath
+}

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DataMiningProject1Apriori_main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DataMiningProject1Apriori_main_jar</output-path>
+    <root id="archive" name="DataMiningProject1Apriori_main.jar">
+      <element id="module-output" name="DataMiningProject1Apriori_main" />
+    </root>
+  </artifact>
+</component>
